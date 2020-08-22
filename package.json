@@ -1,12 +1,12 @@
 {
-  "name": "Super Cow Power",
+  "name": "GulpBase",
   "version": "1.0.0",
-  "description": "Сборка",
+  "description": "GulpBase empty template",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Witwar",
+  "author": "witwar",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.7",
@@ -27,8 +27,5 @@
     "gulp.spritesmith": "^6.11.0",
     "node-normalize-scss": "^8.0.1",
     "spectre.css": "^0.5.9"
-  },
-  "dependencies": {
-    "milligram": "^1.4.1"
   }
 }
