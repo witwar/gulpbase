@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Base Html</title>
-	<link rel="stylesheet" href="/static/css/style.min.css">
+	<title>Base HTML</title>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/static/css/style.min.css">
 </head>
 <body>
-	{% block content %}{% endblock %}
+	<header class="header container">
+		<div class="header__sitename">Base HTML</div>
+		{% block header %}{% endblock %}
+	</header>
+	<div class="breadcrumbs container">
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item">Home</li>
+		</ul>
+	</div>
+	<main class="content container">
+		{% block content %}
+			<h1>Base HTML Template</h1>
+		{% endblock %}
+	</main>
+	<footer class="footer container">
+		<div class="footer__content">{% block footer %}{% endblock %}</div>
+	</footer>
+	<script src="/static/js/script.min.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
